@@ -3,7 +3,7 @@
 /**
  * binary_tree_insert_right - inserts a right child leaf to a node
  * @parent: parent node
- * value: node value
+ * @value: node value
  * Return: pointer to new node, NULL if unsuccessful
  */
 
@@ -24,7 +24,7 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 	new->right = parent->right;
 
 	if (parent->right != NULL)
-		Pparent->right->parent = new;
+		parent->right->parent = new;
 
 	parent->right = new;
 
